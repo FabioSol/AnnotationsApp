@@ -3,8 +3,8 @@ services:
     image: mongo:8.0.0-rc20
     container_name: mongodb
     environment:
-      MONGODB_INITDB_ROOT_USERNAME: ${MONGODB_INITDB_ROOT_USERNAME}
-      MONGODB_INITDB_ROOT_PASSWORD: ${MONGODB_INITDB_ROOT_PASSWORD}
+      MONGODB_INITDB_ROOT_USERNAME: root
+      MONGODB_INITDB_ROOT_PASSWORD: password
     volumes:
       - ./database/data_volumes:/data/db
       - ./database/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js
