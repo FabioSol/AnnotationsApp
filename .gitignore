@@ -1,0 +1,60 @@
+# Ignore sensitive data
+*.env
+*.secret
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+*.db
+
+database/data_volumes/*
+images/*
+
+# Node modules (if using Node.js in your Docker project)
+node_modules/
+.next/
+
+
+# Python virtual environment (if Python is used)
+venv/
+.env/
+
+# Ignore IDE files
+.idea/
+.vscode/
+
+backend/app/export/
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
