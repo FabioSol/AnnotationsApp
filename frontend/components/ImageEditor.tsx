@@ -99,13 +99,14 @@ const ImageEditor: React.FC<ImageEditorProps> = ({ imageData, annotations, setAn
     const handleMouseUpReSize=()=>{
       if (clicked && resizingNeeded){
         updateCanvasSize(image);
-        clicked = false;
         resizingNeeded=false;
       }
+      clicked = false;
     }
 
     const handleMouseDownReSize=()=>{
       clicked=true;
+      resizingNeeded=false;
     }
 
     window.addEventListener('mouseup',handleMouseUpReSize);
