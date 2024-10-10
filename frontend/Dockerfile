@@ -5,13 +5,14 @@ FROM node:22-alpine AS builder
 WORKDIR /app
 
 # Copy package.json and package-lock.json first to install dependencies
-COPY package.json package-lock.json ./
+COPY app/package.json app/package-lock.json ./
 
 # Install dependencies
 RUN npm install
 
 # Copy the rest of your application code
-COPY .. .
+COPY ./app .
+
 
 ARG NEXT_PUBLIC_BACKEND_URL
 ENV NEXT_PUBLIC_BACKEND_URL=${NEXT_PUBLIC_BACKEND_URL}
