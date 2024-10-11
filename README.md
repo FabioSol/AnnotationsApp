@@ -1,4 +1,4 @@
-# Image Annotation App
+# AnnotationsApp
 
 This project provides a simple and efficient tool for annotating images, designed to facilitate the creation of datasets for computer vision tasks. The application is containerized using Docker and can be easily set up with `docker-compose`.
 
